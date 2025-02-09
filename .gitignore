@@ -1,0 +1,5 @@
+env_ek/
+__pycache__/
+*.pyc
+.DS_Store
+
