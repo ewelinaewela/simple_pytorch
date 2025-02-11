@@ -21,7 +21,7 @@ class SimpleNN(torch.nn.Module):
 
 # Load model
 model = SimpleNN()
-model.load_state_dict(torch.load("model.pth"))
+model.load_state_dict(torch.load("model.pth", map_location=torch.device('cpu')))
 model.eval()
 
 # Load and scale dataset
